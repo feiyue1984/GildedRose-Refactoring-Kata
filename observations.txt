@@ -1,8 +1,8 @@
-1. Certain scenarios are not covered by test cases, especially the depreciation/appreciation spanning
+1. Certain scenarios are not covered by test cases, especially the depreciation/appreciations spanning
 over difference stages at varying rates.
 
-2. It's better to make Item immutable and the updateQualityMethod pure (without side-effect) to promote thread-safety
-and parallel processing.
+2. It's better to make Item immutable and the updateQuality method pure (without side-effect) to guard thread-safety
+and to promote parallel processing.
 
 3. It's better to override hashCode() and equals() methods of Item in case data structures as HashSet, HashMap
 are used.
